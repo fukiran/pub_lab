@@ -12,6 +12,6 @@ class Customer():
         self.drunkenness += drink.alcohol_level
 
     def can_afford(self, drink):
-        
+
         if self.wallet >= drink.price:
             return True

@@ -12,10 +12,8 @@ class Pub():
             self.till += drink.price
 
     def check_customer_age(self,customer):
-        if customer.age >= 18:
-            return True
+        return customer.age >= 18
 
     def check_if_customer_is_too_drunk(self, customer):
-        if customer.drunkenness >= 10:
-            return True
-        return False
+        return customer.drunkenness >= 10
+            
