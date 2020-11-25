@@ -13,7 +13,12 @@ class TestCustomer(unittest.TestCase):
     def test_customer_has_wallet(self):
         self.assertEqual(10, self.customer.wallet)
 
-    # def test_can_buy_drink(self):
-    #     self.customer.buy_drink(drink)
-    #     self.assertEqual(18, self.customer.wallet)
+    def test_can_buy_drink(self):
+        self.customer.buy_drink(self.drink)
+        self.assertEqual(8, self.customer.wallet)
 
+    def test_can_customer_afford_drink(self):
+        self.assertEqual(self.customer.can_afford(self.drink), True)
+            
+
+          
