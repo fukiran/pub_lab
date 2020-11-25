@@ -14,3 +14,8 @@ class Pub():
     def check_customer_age(self,customer):
         if customer.age >= 18:
             return True
+
+    def check_if_customer_is_too_drunk(self, customer):
+        if customer.drunkenness >= 10:
+            return True
+        return False
