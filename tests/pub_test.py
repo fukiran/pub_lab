@@ -11,5 +11,5 @@ class TestPub(unittest.TestCase):
         self.assertEqual("The Prancing Pony", self.pub.name)
 
 
-    
+
     

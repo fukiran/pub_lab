@@ -1,4 +1,7 @@
+
+
 class Pub():
-    def __init__(self, name, money):
+    def __init__(self, name, till):
         self.name = name
-        self.moneey = money
+        self.till = till
+        self.drinks = []
